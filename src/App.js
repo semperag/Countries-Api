@@ -67,14 +67,6 @@ const Countries = () => {
         <Country />
       </main>
       <footer>
-        <div>{/*scountries.map(country) => {
-          const { id } = country
-
-          return (
-            <article 
-          )
-        })*/}
-        </div>
       </footer>
     </div>
   );
