@@ -10,6 +10,19 @@
   background-color: blue;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: beige;
+}
+
 #filter {
   display: flex;
   flex-direction: row;
