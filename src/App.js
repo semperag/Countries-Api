@@ -3,6 +3,7 @@ import axios from 'axios';
 import styles from './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
+import Country from './Country';
 
 function App() {
   /*
@@ -63,24 +64,7 @@ const Countries = () => {
 
       <main id="all-countries">
         <div id="pharse">In the world we have 250 countries</div>
-        <div className="country">
-          <img src="https://flagcdn.com/w320/us.png"></img>
-          <div className="country-name">United States of America</div>
-          <div className="quick-facts">
-            <div className="population">
-              <span className="title">Population: </span>
-              <span>329484123</span>
-            </div>
-            <div className="region">
-              <span className="title">Region: </span>
-              <span>Americas</span>
-            </div>
-            <div className="capital">
-              <span className="title">Capital: </span>
-              <span>Washington, D.C.</span>
-            </div>
-          </div>
-        </div>
+        <Country />
       </main>
       <footer>
         <div>{/*scountries.map(country) => {
