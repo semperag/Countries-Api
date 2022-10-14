@@ -31,5 +31,24 @@
 }
 
 .country {
+  width: 21%;
   background-color: antiquewhite;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: start;
+}
+
+.country-container {
+  margin: 10px;
+  padding-bottom: 15px;
+}
+
+.quick-facts {
+  font-size: .7em;
+  text-align: start;
+}
+
+img {
+  height: 150px;
+  width: 100%;
 }
