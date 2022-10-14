@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import styles from './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   /*
@@ -44,13 +46,15 @@ const Countries = () => {
 
   return (
     <div className="App">
+
+      <Navbar />
       <header>
-        
+
         <div id="navbar">
           <span>Where in the World?</span>
           <span>Light Mode</span>
         </div>
-
+        <Home />
         <div id="filter">
           <div id="search">search</div>
           <div id="region-filter">filter by region</div>
