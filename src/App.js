@@ -7,12 +7,6 @@ import Country from './Country';
 
 function App() {
 
-
-
-
-
-
-
   return (
     <div className="App">
 
