@@ -9,9 +9,7 @@ function App() {
 
 
 
-  useEffect(() => {
-    fetchCountryData()
-}, [])
+
 
 const Countries = () => {
   const [countries, setCountries] = useState([])
