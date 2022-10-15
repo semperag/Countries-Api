@@ -11,20 +11,7 @@ function App() {
 
 
 
-const Countries = () => {
-  const [countries, setCountries] = useState([])
 
-  const fetchCountryData = async() => {
-    const response = await fetch(url)
-    const countries = await response.json()
-    setCountries(countries)
-    console.log(countries);
-  }
-
-  useEffect(() => {
-    fetchCountryData()
-}, [])
-}
 
   return (
     <div className="App">
