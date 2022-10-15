@@ -6,16 +6,6 @@ import Home from './Home';
 import Country from './Country';
 
 function App() {
-  /*
-  const [data, setData] = useState({})
-  
-  
-  const url = "https://restcountries.com/v3.1/all";
-
-  axios.get(url).then((response) => {
-    setData(response.data)
-  })
-*/
 const url = 'https://restcountries.com/v3.1/name/japan';
 const [countries, setCountries] = useState([])
 
