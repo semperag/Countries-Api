@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import { getByPlaceholderText } from '@testing-library/react';
+import {useState, useEffect} from 'react';
 import BlogList from './BlogList';
 
 const Home = () => {
@@ -11,6 +12,17 @@ const Home = () => {
     ]);
 
     const [name, setName] = useState('mario');
+
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter(blog => blog.id !== id)
+        setBlogs(newBlogs)
+    }
+
+    useEffect(() => {
+        console.log('use effect ran')
+        console.log(name)
+    }, [name]);
+
     const [age, setAge] = useState(25);
 
     const handleClick = (e) => {
@@ -32,7 +44,10 @@ const Home = () => {
                 handleClickAgain('mario', e)
             }}>Click me again</button>
 
-            <BlogList blogs={blogs} title="All blogs"/>
+            <BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete}/>
+            <button onClick={() => setName('liugi')}>change name</button>
+            <p>{name}</p>
+            <BlogList blogs={blogs.filter((blog) => blog.author == 'mario')} title="Mario's blogs"/>
         </div>
     );
 }
