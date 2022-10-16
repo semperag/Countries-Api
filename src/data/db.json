@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "my website", 
+            "body": "bodyyyyy", 
+            "author": "mario", 
+            "id": 1
+        },
+        {
+            "title": "opening parrty", 
+            "body": "bodyyyyy", 
+            "author": "yoshi", 
+            "id": 2
+        }
+    ]
+}
