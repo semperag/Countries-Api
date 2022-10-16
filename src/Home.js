@@ -5,11 +5,7 @@ import BlogList from './BlogList';
 const Home = () => {
     //let name = 'mario';
 
-    const [blogs, setBlogs] = useState([
-        {title: 'my website', body: 'bodyyyyy', author: 'mario', id: 1},
-        {title: 'well party', body: 'bodyyyyy', author: 'yoshi', id: 2},
-        {title: 'web deve stuf', body: 'bodyyyyy', author: 'mario', id: 3},
-    ]);
+    const [blogs, setBlogs] = useState(null);
 
     const [name, setName] = useState('mario');
 
@@ -19,9 +15,8 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log('use effect ran')
-        console.log(name)
-    }, [name]);
+        fetch()
+    }, []);
 
     const [age, setAge] = useState(25);
 
@@ -45,8 +40,6 @@ const Home = () => {
             }}>Click me again</button>
 
             <BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete}/>
-            <button onClick={() => setName('liugi')}>change name</button>
-            <p>{name}</p>
             <BlogList blogs={blogs.filter((blog) => blog.author == 'mario')} title="Mario's blogs"/>
         </div>
     );
