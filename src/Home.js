@@ -46,8 +46,8 @@ const Home = () => {
                 handleClickAgain('mario', e)
             }}>Click me again</button>
 
-            <BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete}/>
-            <BlogList blogs={blogs.filter((blog) => blog.author == 'mario')} title="Mario's blogs"/>
+            {blogs &&<BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete}/>}
+            {blogs && <BlogList blogs={blogs.filter((blog) => blog.author == 'mario')} title="Mario's blogs"/>}
         </div>
     );
 }
