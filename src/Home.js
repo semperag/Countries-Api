@@ -35,7 +35,7 @@ const Home = () => {
                 setIsPendings(false)
                 setError(err.message);
             })
-        }, 2000)
+        }, 1000)
     }, []);
 
     const [age, setAge] = useState(25);
