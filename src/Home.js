@@ -6,6 +6,8 @@ const Home = () => {
     //let name = 'mario';
 
     const [blogs, setBlogs] = useState(null);
+    const [isPending, setIsPendings] = useState(true);
+    const [error, setError] = useState(null);
 
     const [name, setName] = useState('mario');
 
@@ -15,14 +17,25 @@ const Home = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:8000/blogs')
+        setTimeout(() => {
+            fetch('http://localhost:8000/blogs')
+            
             .then(res => {
+                if (!res.ok) {
+                    throw Error('could not fetch the data for that resource')
+                }
                 return res.json()
             })
             .then(data => {
                 console.log(data);
                 setBlogs(data);
+                setIsPendings(false)
             })
+            .catch(err => {
+                setIsPendings(false)
+                setError(err.message);
+            })
+        }, 2000)
     }, []);
 
     const [age, setAge] = useState(25);
@@ -39,6 +52,10 @@ const Home = () => {
 
     return (
         <div className="home">
+
+            {error && <div>{error}</div>}
+            {isPending && <div>Loading...</div>}
+
             <h2>Homepage</h2>
             <button onClick={handleClick}>Click me</button>
             <p>{name} is {age} years old</p>
