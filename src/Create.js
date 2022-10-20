@@ -8,6 +8,7 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false);
     const history = useHistory();
 
+    // When submitting - post to database then go back to homepage
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = {title, body, author};
