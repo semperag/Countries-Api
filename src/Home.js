@@ -42,6 +42,7 @@ const Home = () => {
                 handleClickAgain('mario', e)
             }}>Click me again</button>
 
+            {/* Passing blogs from databse either untouched or filtered to display in BlogList*/}
             {blogs && <BlogList blogs={blogs} title="All blogs" handleDelete={handleDelete}/>}
             {blogs && <BlogList blogs={blogs.filter((blog) => blog.author == 'mario')} title="Mario's blogs"/>}
         </div>
