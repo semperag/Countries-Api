@@ -6,6 +6,7 @@ import useFetch from './useFetch';
 const Home = () => {
     //let name = 'mario';
 
+    // Fetching from the database return values to our assigned variables
     const {data: blogs, isPending, error} =  useFetch('http://localhost:8000/blogs');
 
     const [name, setName] = useState('mario');
