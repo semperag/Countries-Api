@@ -11,6 +11,7 @@ const Home = () => {
 
     const [name, setName] = useState('mario');
 
+    // Need to delete specific blog which can be done with 'id'
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id)
         //setBlogs(newBlogs)
