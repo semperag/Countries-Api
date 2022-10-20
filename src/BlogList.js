@@ -6,7 +6,7 @@ const BlogList = ({blogs, title, handleDelete}) => {
 
     //console.log(props,blogs);
 
-
+    // Using passed in attributes - we create a blog display for each blog passed
     return (
         <div className="blog-list">
             <h2> {title} </h2>
