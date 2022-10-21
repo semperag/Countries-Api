@@ -8,17 +8,18 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
+import SearchBar from './SearchBar';
 
 function App() {
 
   return (
     <Router>
+      <Navbar />
       <div className="App">
-
-        <Navbar />
           <div className='content'>
             <Switch>
               <Route exact path="/">
+                <SearchBar />
                 <Home />
               </Route>
               <Route path="/create">
