@@ -31,7 +31,7 @@
 }
 
 .country {
-  width: 21%;
+  width: 300px;
   background-color: antiquewhite;
   border-radius: 10px;
   overflow: hidden;
@@ -48,7 +48,16 @@
   text-align: start;
 }
 
+.title {
+  font-weight: bold;
+}
+
 img {
   height: 150px;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
