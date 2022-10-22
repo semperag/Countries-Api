@@ -8,28 +8,18 @@
       "id": 1
     },
     {
-      "title": "opening parrty",
-      "body": "bodyyyyy",
-      "author": "yoshi",
+      "name": "US",
+      "population": "1",
+      "region": "Americas",
+      "Captial": "D.C.",
       "id": 2
     },
     {
-      "title": "a",
-      "body": "b",
-      "author": "mario",
+      "name": "US",
+      "population": "1",
+      "region": "Americas",
+      "Captial": "D.C.",
       "id": 3
-    },
-    {
-      "title": "bbbbbb",
-      "body": "bbbbbbb",
-      "author": "mario",
-      "id": 4
-    },
-    {
-      "title": "hellos ninja",
-      "body": "home",
-      "author": "mario",
-      "id": 6
     }
   ]
 }
