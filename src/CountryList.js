@@ -6,7 +6,7 @@ function CountryList({countries, name, population}) {
         <div className="country-list">
             {countries.map((country) => (
                 <div className="country-preview" key={country.id}>
-                    <Link to={`/blogs/${country.id}`}>
+                    <Link to={`/countries/${country.id}`}>
                         <div className="country">
                             <img src={country.image}></img>
                             <div className="country-container">
