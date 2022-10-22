@@ -1,9 +1,5 @@
 const Country = () => {
-    let image = "https://flagcdn.com/w320/us.png"
-    let name = "United States of America";
-    let population = 329484123;
-    let region = "Americas";
-    let capital = "Washington, D.C.";
+    
 
     return (
         <div className="country">
