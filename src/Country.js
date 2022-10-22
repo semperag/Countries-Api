@@ -1,5 +1,6 @@
 const Country = () => {
   const {id} = useParams();
+  const {data: blog, error, isPending} = useFetch('http://localhost:8000/blogs/' + id);
 
     return (
         <div className="country">
