@@ -1,5 +1,5 @@
 const Country = () => {
-    
+  const {id} = useParams();
 
     return (
         <div className="country">
