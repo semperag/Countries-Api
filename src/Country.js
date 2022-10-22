@@ -7,21 +7,21 @@ const Country = () => {
 
     return (
         <div className="country">
-          <img src={image}></img>
+          <img ></img>
           <div className="country-container">
-            <div className="country-name">{name}</div>
+            <div className="country-name"></div>
             <div className="quick-facts">
                 <div className="population">
                 <span className="title">Population: </span>
-                <span>{population}</span>
+                <span></span>
                 </div>
                 <div className="region">
                 <span className="title">Region: </span>
-                <span>{region}</span>
+                <span></span>
                 </div>
                 <div className="capital">
                 <span className="title">Capital: </span>
-                <span>{capital}</span>
+                <span></span>
                 </div>
             </div>
           </div>
