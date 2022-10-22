@@ -1,3 +1,5 @@
+import useFetch from "./useFetch";
+
 const Country = () => {
   const {id} = useParams();
   const {data: blog, error, isPending} = useFetch('http://localhost:8000/blogs/' + id);
