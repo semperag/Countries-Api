@@ -5,20 +5,13 @@ import CountryList from './CountryList';
 import useFetch from './useFetch';
 
 const Home = () => {
-    const [countries, setCountries] = useState([
-        {
-            image: "https://flagcdn.com/w320/us.png",
-            name: "US",
-            population: "1",
-            region: "Americas",
-            capital: "D.C",
-            id: 1 }
-    ])
+    const {data: countries, isPending, error} =  useFetch('https://restcountries.com/v3.1/all');
 
     return (
         <div className="home">
 
-            {<CountryList countries={countries}/>}
+            {countries && <CountryList countries={countries}/>}
+            {console.log('after')}
         </div>
     );
 }
