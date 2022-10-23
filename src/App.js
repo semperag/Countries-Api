@@ -3,12 +3,12 @@ import axios from 'axios';
 import styles from './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
-import Country from './Country';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 import SearchBar from './SearchBar';
+import Country from './Country';
 
 function App() {
 
@@ -25,8 +25,8 @@ function App() {
               <Route path="/create">
                 <Create />
               </Route>
-              <Route path="/blogs/:id">
-                <BlogDetails />
+              <Route path="/countries/:id">
+                <Country />
               </Route>
               <Route path="*">
                 <NotFound />
