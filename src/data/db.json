@@ -1,24 +1,27 @@
 {
   "countries": [
     {
+      "image": "https://flagcdn.com/w320/can.png",
       "name": "US",
       "population": "1",
       "region": "Americas",
-      "Captial": "D.C.",
+      "capital": "D.C.",
       "id": 1
     },
     {
+      "image": "https://flagcdn.com/w320/us.png",
       "name": "US",
       "population": "1",
       "region": "Americas",
-      "Captial": "D.C.",
+      "capital": "D.C.",
       "id": 2
     },
     {
+      "image": "https://flagcdn.com/w320/us.png",
       "name": "US",
       "population": "1",
       "region": "Americas",
-      "Captial": "D.C.",
+      "capital": "D.C.",
       "id": 3
     }
   ]
