@@ -25,7 +25,7 @@ function App() {
               <Route path="/create">
                 <Create />
               </Route>
-              <Route path="/countries/:id">
+              <Route path="/details/:id">
                 <Country />
               </Route>
               <Route path="*">
