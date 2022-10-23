@@ -3,24 +3,24 @@ import useFetch from "./useFetch";
 
 const Country = () => {
   const {id} = useParams();
-  const {data: blog, error, isPending} = useFetch('http://localhost:8000/countries/' + id);
+  const {data: country, error, isPending} = useFetch('http://localhost:8000/countries/' + id);
 
     return (
         <div className="country">
-          <img ></img>
+          {country && <img src={country.image}></img> }
           <div className="country-container">
-            <div className="country-name"></div>
-            <div className="quick-facts">
+              {country && <div className="country-name title">{country.name}</div>}
+              <div className="quick-facts">
                 <div className="population">
-                <span className="title">Population: </span>
+                {country && <span className="title">Population: {country.population}</span>}
                 <span></span>
                 </div>
                 <div className="region">
-                <span className="title">Region: </span>
+                {country && <span className="title">Region: {country.region}</span>}
                 <span></span>
                 </div>
                 <div className="capital">
-                <span className="title">Capital: </span>
+                {country && <span className="title">Capital: {country.captial}</span>}
                 <span></span>
                 </div>
             </div>
