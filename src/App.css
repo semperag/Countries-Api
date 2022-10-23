@@ -39,6 +39,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 50px;
+  row-gap: 50px;
 }
 
 .country-preview {
@@ -52,10 +54,11 @@ body {
   overflow: hidden;
   text-align: start;
   background-color: white;
+  height: 100%;
 }
 
 .country-container {
-  margin: 10px;
+  margin: 20px;
   padding-bottom: 15px;
 }
 
@@ -65,14 +68,23 @@ body {
 }
 
 .title {
-  font-weight: bold;
-  font-size: .75em;
+  font-weight: 500;
 }
 
 img {
   height: 150px;
   width: 100%;
 }
+
+.country-name {
+  font-size: .75em;
+  font-weight: bold;
+}
+
+.population, .region, .capital {
+  font-size: .75em;
+}
+
 
 a {
   text-decoration: none;
