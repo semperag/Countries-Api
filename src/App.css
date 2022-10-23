@@ -30,12 +30,28 @@
   background-color: red;
 }
 
+body {
+  background-color: #eeeeee;
+
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.country-preview {
+  max-width: none;
+  width: 21%;
+}
+
 .country {
-  width: 300px;
   background-color: antiquewhite;
   border-radius: 10px;
   overflow: hidden;
   text-align: start;
+  background-color: white;
 }
 
 .country-container {
@@ -50,6 +66,7 @@
 
 .title {
   font-weight: bold;
+  font-size: .75em;
 }
 
 img {
