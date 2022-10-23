@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Country = () => {
   const {id} = useParams();
-  const {data: country, error, isPending} = useFetch('http://localhost:8000/countries/' + id);
+  const {data: country, error, isPending} = useFetch('https://restcountries.com/v3.1/name/' + id);
 
     return (
         <div className="country">
