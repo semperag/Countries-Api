@@ -5,12 +5,12 @@ function CountryList({countries, name, population}) {
     return (
         <div className="country-list">
             {countries.map((country) => (
-                <div className="country-preview" key={country.id}>
-                    <Link to={`/countries/${country.id}`}>
+                <div className="country-preview" key={country.name.official}>
+                    <Link to={`/countries/${country.name.official}`}>
                         <div className="country">
-                            <img src={country.image}></img>
+                            <img src={country.flags.png}></img>
                             <div className="country-container">
-                                <div className="country-name title">{country.name}</div>
+                                <div className="country-name title">{country.name.common}</div>
                                 <div className="quick-facts">
                                     <div className="population">
                                         <span className="title">Population: </span>
@@ -22,7 +22,7 @@ function CountryList({countries, name, population}) {
                                     </div>
                                     <div className="capital">
                                         <span className="title">Capital: </span>
-                                        <span>{country.capital}</span>
+                                        <span>{country["capital"]}</span>
                                     </div>
                                 </div>
                             </div>
