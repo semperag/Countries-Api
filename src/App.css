@@ -90,3 +90,48 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.country-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.country-details img {
+  height: auto;
+  width: 50%;
+  max-width: 500px;
+}
+
+.country-info {
+  width: 40%;
+  justify-content: start;
+  text-align: start;
+  font-size: 16px;
+}
+
+.country-info .population, .region, .capital {
+  font-size: 1em;
+}
+
+.country-info .country-name {
+  font-size: 25px !important;
+}
+
+.country-facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.country-facts .facts-left div{
+  padding: 5px;
+  padding-left: 0;
+}
+
+.country-facts .facts-right div{
+  padding: 5px;
+}
