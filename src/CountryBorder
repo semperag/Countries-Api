@@ -1,0 +1,7 @@
+const CountryBorder = () => {
+    return (
+        <span>border</span>
+    )
+}
+
+export default CountryBorder;
