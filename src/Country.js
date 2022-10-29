@@ -5,11 +5,10 @@ const Country = () => {
   const {id} = useParams();
   console.log(id);
   const {data: country, error, isPending} = useFetch('https://restcountries.com/v3.1/name/' + id);
-  country && console.log("name = " + JSON.stringify(country[0].currencies));
+  country && console.log("currency = " + JSON.stringify(country[0].currencies));
+  country && console.log("currency = " + JSON.stringify(country[0].currencies));
     if (country && country[0]) {
-     for (let curr of country[0].currencies) {
-      console.log("name = " + curr.name);
-     } 
+      
     }
     return (
         <div className="country-details">
