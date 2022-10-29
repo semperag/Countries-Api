@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
+import CountryBorder from './CountryBorder';
 
 const Country = () => {
   const {id} = useParams();
@@ -56,6 +57,7 @@ const Country = () => {
               </div>
             </div>
             <div>Border Countries:</div>
+            {country && <CountryBorder countryBorder={country[0].borders}/>}
             <div>these are countries</div>
           </div>
         </div>
