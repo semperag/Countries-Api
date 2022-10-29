@@ -57,7 +57,7 @@ const Country = () => {
               </div>
             </div>
             <div>Border Countries:</div>
-            {country && <CountryBorder countryBorder={country[0].borders}/>}
+            {country && <CountryBorder countries={country[0].borders}/>}
             <div>these are countries</div>
           </div>
         </div>
