@@ -6,9 +6,11 @@ const Country = () => {
   console.log(id);
   const {data: country, error, isPending} = useFetch('https://restcountries.com/v3.1/name/' + id);
   country && console.log("currency = " + JSON.stringify(country[0].currencies));
-  country && console.log("currency = " + JSON.stringify(country[0].currencies));
+  country && console.log("currency = " + JSON.stringify(country[0].borders));
     if (country && country[0]) {
-      
+      for (let i = 0; i < country[0].borders.length; i++) {
+        console.log(country[0].borders[i]);
+      }
     }
     return (
         <div className="country-details">
