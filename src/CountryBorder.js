@@ -2,7 +2,7 @@ function CountryBorder({countries}) {
     return (
         <span>border</span>
         {countries.map((country) => (
-            <div></div>
+            <div>hello</div>
         ))}
     );
 }
