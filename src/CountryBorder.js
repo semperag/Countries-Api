@@ -1,8 +1,10 @@
 function CountryBorder({countries, name}) {
     return (
         <span>border</span>
-        {countries && name}
-    );
+        {countries.map((country) => (
+            <div>{country}</div>
+        ))}
+    )
 }
 
 export default CountryBorder;
