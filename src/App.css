@@ -3,24 +3,29 @@
   font-size: 2em;
 }
 
-#navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: blue;
-}
-
 .navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: white;
+  height: 90px;
 }
 
 .links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: beige;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 90px;
+  font-weight: bold;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.links a {
+  height: 40px;
+  align-items: center;
 }
 
 #filter {
@@ -81,10 +86,17 @@ img {
   font-weight: bold;
 }
 
-.population, .region, .capital {
+.country-list .population {
   font-size: .75em;
 }
 
+.country-list .region {
+  font-size: .75em;
+}
+
+.country-list .capital {
+  font-size: .75em;
+}
 
 a {
   text-decoration: none;
@@ -95,7 +107,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -106,18 +118,15 @@ a {
 }
 
 .country-info {
-  width: 40%;
+  margin: auto;
+  width: 45%;
   justify-content: start;
   text-align: start;
-  font-size: 16px;
-}
-
-.country-info .population, .region, .capital {
-  font-size: 1em;
 }
 
 .country-info .country-name {
-  font-size: 25px !important;
+  font-size: .65em !important;
+  padding-bottom: 10px;
 }
 
 .country-facts {
@@ -125,13 +134,20 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 30px;
+  font-size: .45em !important;
+}
+
+.facts-left, .facts-right {
+  width: 100%;
 }
 
 .country-facts .facts-left div{
   padding: 5px;
   padding-left: 0;
+  width: 100%;
 }
 
 .country-facts .facts-right div{
   padding: 5px;
+  width: 100%;
 }

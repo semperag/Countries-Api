@@ -1,0 +1,24 @@
+.border-countries {
+    font-size: .5em;
+}
+
+.border-list {
+    display: flex;  
+    flex-wrap: wrap;
+    height: 75px;
+}
+
+.border-list a {
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 75px;
+    height: 20px;
+    background-color: white;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.border-list a:hover{
+    box-shadow: 0 0 7px black;
+}

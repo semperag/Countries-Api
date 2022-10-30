@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import CountryBorder from './CountryBorder';
 import CountryCurrency from "./CountryCurrency";
+import Language from "./Language";
 
 const Country = () => {
   const {id} = useParams();
@@ -55,12 +56,14 @@ const Country = () => {
                 </div>
                 <div className="Languages">
                   <span className="title">Languages: </span>
-                  {country && <span>{country[0].capital}</span>}
+                  {country && <Language languages={country[0].languages}/>}
                 </div>
               </div>
             </div>
-            <div>Border Countries:</div>
-            {country && <CountryBorder countries={country[0].borders}/>}
+            <div className="border-countries">
+              <div className="title">Border Countries:</div>
+              {country && <CountryBorder countries={country[0].borders}/>}
+            </div>
           </div>
         </div>
     );
