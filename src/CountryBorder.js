@@ -1,9 +1,7 @@
-function CountryBorder({countries}) {
+function CountryBorder({countries, name}) {
     return (
         <span>border</span>
-        {countries.map((country) => (
-            <div>hello</div>
-        ))}
+        {countries && name}
     );
 }
 
