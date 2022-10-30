@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
+import styles from './CountryBorder.css';
 
 function CountryBorder({countries, name}) {
     return (
-        <div className="country-list">
+        <div className="border-list">
             {countries && countries.map((country) => (
-                <div key={country}>
-                    <Link to={`/details/${country}`}>
-                        <div className="country-preview">
-                            {country}
-                        </div>
+                    <Link to={`/details/${country}`} key={country}>
+                        {country}
                     </Link>
-                </div>
             ))}
         </div>
     );
