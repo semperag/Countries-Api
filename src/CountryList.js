@@ -5,8 +5,8 @@ function CountryList({countries, name, population}) {
     return (
         <div className="country-list">
             {countries.map((country) => (
-                <div className="country-preview" key={country.name.common}>
-                    <Link to={`/details/${country.name.common}`}>
+                <div className="country-preview" key={country.cioc}>
+                    <Link to={`/details/${country.cioc}`}>
                         <div className="country">
                             <img src={country.flags.png}></img>
                             <div className="country-container">
