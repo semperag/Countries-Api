@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 import styles from './App.css';
 
 function CountryList({countries, name, population}) {
+
+    const myData = [].concat(countries)
+    .sort((a, b) => a.name.common > b.name.common ? 1 : -1);
+
     return (
         <div className="country-list">
-            {countries.map((country) => (
+            {myData.map((country) => (
                 <div className="country-preview" key={country.cioc}>
                     <Link to={`/details/${country.cioc}`}>
                         <div className="country">
