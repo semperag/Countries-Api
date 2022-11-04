@@ -1,6 +1,5 @@
 import { getByPlaceholderText } from '@testing-library/react';
 import {useState, useEffect} from 'react';
-import BlogList from './BlogList';
 import CountryList from './CountryList';
 import useFetch from './useFetch';
 
