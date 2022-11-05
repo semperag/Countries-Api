@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import CountryBorder from './CountryBorder';
-import CountryCurrency from "./CountryCurrency";
 import Language from "./Language";
 
 const Country = () => {
