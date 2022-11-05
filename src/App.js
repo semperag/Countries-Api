@@ -33,27 +33,6 @@ function App() {
             </Switch>
           </div>
         <header>
-
-{/*
-          <div id="navbar">
-            <span>Where in the World?</span>
-            <span>Light Mode</span>
-          </div>
-          <div id="filter">
-            <div id="search">search</div>
-            <div id="region-filter">filter by region</div>
-          </div>
-        </header>
-
-        <main id="all-countries">
-          <div id="pharse">In the world we have 250 countries</div>
-          <Country />
-        </main>
-        <footer>
-        </footer>
-      </div>
-
-  */}
     </header>
     </div>
     </Router>
