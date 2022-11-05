@@ -32,8 +32,6 @@ function App() {
               </Route>
             </Switch>
           </div>
-        <header>
-    </header>
     </div>
     </Router>
   );
