@@ -4,7 +4,6 @@ import styles from './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Create from './Create';
 import NotFound from './NotFound';
 import Country from './Country';
 
