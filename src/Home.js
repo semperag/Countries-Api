@@ -21,7 +21,7 @@ const Home = () => {
         <><div className="searchbar">
             <input placeholder="search for a country"></input>
             <div className="filterbar">
-                <div>Filter by Region</div>
+                <div className="title">Filter by Region</div>
                 <select defaultValue={"all"} onChange={selectRegion}>
                     <option value="all">All countries</option>
                     <option value="Africa">Africa</option>
