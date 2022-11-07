@@ -6,7 +6,7 @@ import useFetch from './useFetch';
 const Home = () => {
     const [region, setRegion] = useState('all');
 
-    const {data: countries, isPending, error} =  useFetch('https://restcountries.com/v3.1/' + region);
+    const {data: countries, isPending, error} =  useFetch('https://restcountries.com/v2/' + region);
 
     const selectRegion = (e) => {
         if (e.target.value === "all") {
