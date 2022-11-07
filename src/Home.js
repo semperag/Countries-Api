@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <><div className="searchbar">
-            <input placeholder="search for a country"></input>
+            <input placeholder="Search for a country"></input>
             <div className="filterbar">
                 <div className="title">Filter by Region</div>
                 <select defaultValue={"all"} onChange={selectRegion}>
