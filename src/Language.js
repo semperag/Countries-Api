@@ -7,7 +7,7 @@ const Language = ({languages}) => {
             {languages && languages.map((language, i) => (
                 <span key={language.name}>
                     {language.name}
-                    {(languagesCount-1 != i) && <span>, </span>}
+                    {(languagesCount-1 !== i) && <span>, </span>}
                 </span>
             ))}
         </span>
