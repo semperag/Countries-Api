@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import CountryBorder from './CountryBorder';
 import Language from "./Language";
+import "./Country.css"
 
 const Country = () => {
   const {id} = useParams();
