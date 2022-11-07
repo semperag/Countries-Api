@@ -39,6 +39,16 @@
   background-color: red;
 }
 
+.filterbar .title {
+  font-size: 30px; 
+}
+
+.filterbar select {
+  height: 30px;
+  font-size: 20px;
+  width: 200px; 
+}
+
 body {
   background-color: #eeeeee;
 
