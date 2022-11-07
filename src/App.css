@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-size: 2em;
+  margin: 100px;
 }
 
 .navbar {
@@ -52,10 +53,12 @@ body {
 }
 
 .country-preview {
-  max-width: none;
+  max-width: 300px;
+  min-width: 250px;
   width: 21%;
   transition: 0.3s;
   border-radius: 10px;
+  margin: 10px;
 }
 
 .country-preview:hover {
