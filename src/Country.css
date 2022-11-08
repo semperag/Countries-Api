@@ -1,0 +1,21 @@
+.App {
+    margin: 7.5%;
+}
+
+@media screen and (max-width: 950px) {
+    .country-details {
+        flex-direction: column;
+    }
+
+    .country-details img {
+        width: 100%;
+        min-width: 250px;
+    }
+
+    .country-info {
+        width: 95%;
+        max-width: 500px;
+        margin: 5%;
+
+    }
+}
