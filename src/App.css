@@ -191,3 +191,18 @@ a:hover{
   box-shadow: 0 0 10px black;
 }
 
+@media screen and (max-width: 1000px) {
+  .country-preview {
+    width: 40%
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .country-preview {
+    width: 100%
+  }
+
+  .country-list {
+    justify-content: center;
+  }
+}
