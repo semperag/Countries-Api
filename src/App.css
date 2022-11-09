@@ -32,33 +32,11 @@
   border-radius: 10px;
 }
 
-.searchbar {
-  display: flex;
-  align-items: center;
-}
-
-.searchbar input {
-  height: 40px;
-  width: 250px;
-  font-size: 20px;
-}
-
 #filter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: red;
-}
-
-.filterbar .title {
-  font-size: 30px; 
-  font-weight: normal;
-}
-
-.filterbar select {
-  height: 30px;
-  font-size: 20px;
-  width: 200px; 
 }
 
 body {
