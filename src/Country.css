@@ -2,6 +2,10 @@
     margin: 7.5%;
 }
 
+.back {
+    margin-bottom: 100px;
+}
+
 @media screen and (max-width: 950px) {
     .country-details {
         flex-direction: column;
