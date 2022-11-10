@@ -5,6 +5,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
     const [region, setRegion] = useState('all');
+    const [search, setSearch] = useState('');
 
     const {data: countries, isPending, error} =  useFetch('https://restcountries.com/v2/' + region);
 
@@ -17,9 +18,14 @@ const Home = () => {
         }
     }
 
+    const searchCountries = (e) => {
+        setSearch(e.target.value);
+        console.log(e.target.value);
+    }
+
     return (
         <><div className="searchbar">
-            <input placeholder="Search for a country"></input>
+            <input placeholder="Search for a country" onChange={searchCountries}></input>
             <div className="filterbar">
                 <div className="title">Filter by Region</div>
                 <select defaultValue={"all"} onChange={selectRegion}>
@@ -35,8 +41,7 @@ const Home = () => {
         
         <div className="home">
 
-                {countries && <CountryList countries={countries}/>}
-                {console.log('after')}
+                {countries && <CountryList countries={countries} name={search}/>}
             </div></>
     );
 }
