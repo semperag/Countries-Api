@@ -10,6 +10,7 @@ const Country = () => {
   
     return (
         <div className="country-details">
+          <button className="back">Back</button>
           {country && <img src={country[0].flags.png}></img> }
           <div className="country-info">
             {country && <div className="country-name title">{country[0].name}</div>}
