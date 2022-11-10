@@ -32,6 +32,10 @@
   border-radius: 10px;
 }
 
+.content {
+  margin-left: 0;
+}
+
 #filter {
   display: flex;
   flex-direction: row;
