@@ -7,6 +7,7 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NotFound from './NotFound';
 import Country from './Country';
+import Back from './Back';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                 <Home />
               </Route>
               <Route path="/details/:id">
+                <Back />
                 <Country />
               </Route>
               <Route path="*">
