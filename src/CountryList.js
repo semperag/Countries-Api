@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 
-function CountryList({countries, name, population}) {
+function CountryList({countries, name}) {
 
-    const myData = [].concat(countries)
+    const sort = [].concat(countries)
     .sort((a, b) => a.name > b.name ? 1 : -1);
+
+    const myData = sort.filter(country => {
+        return country.name.toLowerCase().includes(name.toLowerCase());
+    });
 
     return (
         <div className="country-list">
