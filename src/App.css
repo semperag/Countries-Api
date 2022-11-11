@@ -177,6 +177,18 @@ a:hover{
   .country-preview {
     width: 40%
   }
+
+  .links {
+    font-size: 1.3em;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .links a {
+    height: 30px;
+    width: 220px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (max-width: 652px) {
@@ -186,5 +198,17 @@ a:hover{
 
   .country-list {
     justify-content: center;
+  }
+
+  .links {
+    font-size: 1.1em;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .links a {
+    height: 25px;
+    width: 190px;
+    border-radius: 10px;
   }
 }
