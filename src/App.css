@@ -212,3 +212,12 @@ a:hover{
     border-radius: 10px;
   }
 }
+
+.dark {
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  )
+}
