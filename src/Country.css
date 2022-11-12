@@ -1,5 +1,10 @@
 .App {
-    margin: 7.5%;
+    margin: 0;
+    padding: 7.5%;
+}
+
+.country-details {
+    background: none;
 }
 
 @media screen and (max-width: 950px) {
@@ -18,4 +23,8 @@
         margin: 5%;
 
     }
+}
+
+.dark .country-info {
+    color: white;
 }
