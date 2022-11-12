@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import CountryList from './CountryList';
 import useFetch from './useFetch';
 
-const Home = () => {
+const Home = (mode) => {
     const [region, setRegion] = useState('all');
     const [search, setSearch] = useState('');
 
@@ -24,8 +24,8 @@ const Home = () => {
     }
 
     return (
-        <><div className="searchbar">
-            <input placeholder="Search for a country" onChange={searchCountries}></input>
+        <><div className={`searchbar`}>
+            <input className={`${mode}`} placeholder="Search for a country" onChange={searchCountries}></input>
             <div className="filterbar">
                 <div className="title">Filter by Region</div>
                 <select defaultValue={"all"} onChange={selectRegion}>
