@@ -10,25 +10,11 @@ import NotFound from './NotFound';
 import Country from './Country';
 
 function App() {
-  const [theme, setTheme] = useState(
-    localStorage.getItem('theme') || 'light'
-  );
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  };
-  useEffect(() => {
-    localStorage.setItem('theme', theme);
-    document.body.className = theme;
-  }, [theme]);
 
   return (
     <div className="Body">
       <Router>
-        <Navbar theme={theme} setTheme={setTheme}/>
+        <Navbar/>
         <div className="App">
             <div className='content'>
               <Switch>
