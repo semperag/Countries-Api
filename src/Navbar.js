@@ -1,23 +1,16 @@
 import {Link} from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
-const Navbar = ({theme, setTheme}) => {
-       const toggleTheme = () => {
-        setTheme({ ...theme, isLightTheme: !theme.isLightTheme });
-       };
+const Navbar = () => {
+       
     
     return (
-        <Navbar value={{
-            ...theme,
-            toggleTheme
-           }}>
-            <nav className={`navbar ${theme}`}>
+            <nav className={`navbar`}>
                 <div className="links">
                     <Link to="/">Where in the world?</Link>
-                    <button onClick={toggleTheme}>light mode</button>
+                    <button onClick={" "}>light mode</button>
                 </div>
             </nav>
-        </Navbar>
     );
 }
 
