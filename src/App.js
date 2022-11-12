@@ -10,31 +10,34 @@ import NotFound from './NotFound';
 import Country from './Country';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+  
+  useEffect(() => {}, [theme]);
 
   return (
-    <div className="Body">
+    <div className={`body ${theme}`}>
       <Router>
-        <Navbar/>
-        <div className="App">
-            <div className='content'>
-              <Switch>
-                <Route exact path="/">
-                  <Home/>
-                </Route>
-                <Route path="/details/:id">
-                  <div className='single-country'>
-                    <Back />
-                    <Country />
-                  </div>
-                </Route>
-                <Route path="*">
-                  <NotFound />
-                </Route>
-              </Switch>
-            </div>
-      </div>
+        <Navbar theme={theme} setTheme={setTheme}/>
+          <div className="App">
+              <div className='content'>
+                <Switch>
+                  <Route exact path="/">
+                    <Home theme={theme}/>
+                  </Route>
+                  <Route path="/details/:id">
+                    <div className='single-country'>
+                      <Back theme={theme}/>
+                      <Country theme={theme}/>
+                    </div>
+                  </Route>
+                  <Route path="*">
+                    <NotFound />
+                  </Route>
+                </Switch>
+              </div>
+        </div>
       </Router>
-    </div>
+      </div>
   );
 }
 
