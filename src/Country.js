@@ -4,12 +4,12 @@ import CountryBorder from './CountryBorder';
 import Language from "./Language";
 import "./Country.css"
 
-const Country = () => {
+const Country = ({theme}) => {
   const {id} = useParams();
   const {data: country, error, isPending} = useFetch('https://restcountries.com/v2/alpha?codes=' + id);
   
     return (
-        <div className="country-details">
+        <div className={`country-details ${theme}`}>
           {country && <img src={country[0].flags.png}></img> }
           <div className="country-info">
             {country && <div className="country-name title">{country[0].name}</div>}
@@ -53,7 +53,7 @@ const Country = () => {
             </div>
             <div className="border-countries">
               <div className="title">Border Countries:</div>
-              {country && <CountryBorder countries={country[0].borders}/>}
+              {country && <CountryBorder countries={country[0].borders} theme={theme}/>}
             </div>
           </div>
         </div>
