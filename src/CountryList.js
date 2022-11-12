@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import './CountryList.css';
 
-function CountryList({countries, name}) {
+function CountryList({countries, name, theme}) {
 
     const sort = [].concat(countries)
     .sort((a, b) => a.name > b.name ? 1 : -1);
@@ -10,9 +11,9 @@ function CountryList({countries, name}) {
     });
 
     return (
-        <div className="country-list">
+        <div className={`country-list`}>
             {myData.map((country) => (
-                <div className="country-preview" key={country.alpha3Code}>
+                <div className={`country-preview ${theme}`} key={country.alpha3Code}>
                     <Link to={`/details/${country.alpha3Code}`}>
                         <div className="country">
                             <img src={country.flags.png}></img>
