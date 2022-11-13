@@ -1,0 +1,112 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  height: 90px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 90px;
+    font-weight: bold;
+    font-size: 1.5em;
+    align-items: center;
+  }
+  
+  .links a {
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .links button {
+    background-color: white;
+    border: 0;
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: .8em;
+    transition: 0.3s;
+  }
+
+  .links button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+  }
+
+  @media screen and (max-width: 1000px) {
+  
+    .links {
+      font-size: 1.3em;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  
+    .links a {
+      height: 30px;
+      width: 220px;
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 652px) {
+    .links {
+      font-size: 1.1em;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+  
+    .links a {
+      height: 25px;
+      width: 190px;
+      border-radius: 10px;
+    }
+
+    .links button {
+      height: 25px;
+      width: 100px;
+      border-radius: 10px;
+    }
+  }
+
+  .dark .links {
+    background-color: rgba(255, 255, 255, 0.094);
+  }
+
+  .links .dark {
+    background: none;
+    color: white;
+  }
+
+  .links .dark button {
+    background: none;
+    color: white;
+  }
+
+  .dark button:hover{
+    box-shadow: 0 0 10px white;
+  }
+  
+  .dark a:hover{
+    box-shadow: 0 0 10px white;
+  }
+
+  .lightMode {
+    font-size: 1.1em;
+    transition: 0.3s ease-out;
+  }
+
+  .lightMode:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
