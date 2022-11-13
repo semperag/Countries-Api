@@ -2,8 +2,9 @@ import { getByPlaceholderText } from '@testing-library/react';
 import {useState, useEffect} from 'react';
 import CountryList from './CountryList';
 import useFetch from './useFetch';
+import "./Home.css"
 
-const Home = () => {
+const Home = ({theme}) => {
     const [region, setRegion] = useState('all');
     const [search, setSearch] = useState('');
 
@@ -24,11 +25,11 @@ const Home = () => {
     }
 
     return (
-        <><div className={`searchbar`}>
-            <input placeholder="Search for a country" onChange={searchCountries}></input>
+        <><div className={`searchbar ${theme}`}>
+            <input className={`${theme}`} placeholder="Search for a country" onChange={searchCountries}></input>
             <div className="filterbar">
-                <div className="title">Filter by Region</div>
-                <select defaultValue={"all"} onChange={selectRegion}>
+                <div className={`title`}>Filter by Region</div>
+                <select className={`${theme}`} defaultValue={"all"} onChange={selectRegion}>
                     <option value="all">All countries</option>
                     <option value="Africa">Africa</option>
                     <option value="America">America</option>
@@ -41,7 +42,7 @@ const Home = () => {
         
         <div className="home">
 
-                {countries && <CountryList countries={countries} name={search}/>}
+                {countries && <CountryList countries={countries} name={search} theme={theme}/>}
             </div></>
     );
 }
