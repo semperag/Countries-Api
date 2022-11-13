@@ -1,0 +1,78 @@
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+  }
+  
+  .searchbar input {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+  }
+  
+  .filterbar .title {
+    font-size: 30px; 
+    font-weight: normal;
+  }
+  
+  .filterbar select {
+    height: 30px;
+    font-size: 20px;
+    width: 200px; 
+  }
+  
+@media screen and (max-width: 1000px) {
+    .searchbar input {
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        
+    }
+
+    .filterbar .title {
+      font-size: 25px; 
+    }
+    
+    .filterbar select {
+      height: 25px;
+      font-size: 15px;
+      width: 175px; 
+    }
+}
+
+@media screen and (max-width: 550px) {
+  .searchbar input {
+      height: 25px;
+      width: 150px;
+      font-size: 13px;
+      
+  }
+
+  .filterbar .title {
+    font-size: 20px; 
+  }
+  
+  .filterbar select {
+    height: 20px;
+    font-size: 13px;
+    width: 125px; 
+  }
+}
+
+.searchbar .dark {
+    color: white
+  }
+  
+  .dark .filterbar {
+    color: white;
+}
+
+  .dark::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+  .dark option {
+    background-color: black;
+}
