@@ -8,8 +8,8 @@ const Country = ({theme}) => {
   const {id} = useParams();
   const {data: country, error, isPending} = useFetch('https://restcountries.com/v2/alpha?codes=' + id);
   
-    return (
-        <div className={`country-details ${theme}`}>
+    return !isPending ? (
+      <div className={`country-details ${theme}`}>
           {country && <img src={country[0].flags.png}></img> }
           <div className="country-info">
             {country && <div className="country-name title">{country[0].name}</div>}
@@ -21,7 +21,7 @@ const Country = ({theme}) => {
                 </div>
                 <div className="population">
                   <span className="title">Population: </span>
-                  {country && <span>{country[0].population}</span>}
+                  {country && <span>{country[0].population.toLocaleString()}</span>}
                 </div>
                 <div className="region">
                   <span className="title">Region: </span>
@@ -57,7 +57,7 @@ const Country = ({theme}) => {
             </div>
           </div>
         </div>
-    );
+    ):(<div className='loader'></div>)
 }
 
 export default Country;
