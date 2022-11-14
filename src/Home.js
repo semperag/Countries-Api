@@ -25,25 +25,27 @@ const Home = ({theme}) => {
     }
 
     return (
-        <><div className={`searchbar ${theme}`}>
-            <input className={`${theme}`} placeholder="Search for a country" onChange={searchCountries}></input>
-            <div className="filterbar">
-                <div className={`title`}>Filter by Region</div>
-                <select className={`${theme}`} defaultValue={"all"} onChange={selectRegion}>
-                    <option value="all">All countries</option>
-                    <option value="Africa">Africa</option>
-                    <option value="America">America</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Europe">Europe</option>
-                    <option value="Oceania">Oceania</option>
-                </select>
+        <div>
+            <div className={`searchbar ${theme}`}>
+                <input className={`${theme}`} placeholder="Search for a country" onChange={searchCountries}></input>
+                <div className="filterbar">
+                    <div className={`title`}>Filter by Region</div>
+                    <select className={`${theme}`} defaultValue={"all"} onChange={selectRegion}>
+                        <option value="all">All countries</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Americas">Americas</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
             </div>
-        </div>
         
-        <div className="home">
-
+            {!isPending ? (
+            <div className="home">
                 {countries && <CountryList countries={countries} name={search} theme={theme}/>}
-            </div></>
+            </div>):(<div className={`${theme}`}><div className='loader down'></div></div>)}
+        </div>
     );
 }
 

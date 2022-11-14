@@ -6,6 +6,7 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        setIsPendings(true);
         const abortCont = new AbortController();
 
         setTimeout(() => {

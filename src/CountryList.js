@@ -22,7 +22,7 @@ function CountryList({countries, name, theme}) {
                                 <div className="quick-facts">
                                     <div className="population">
                                         <span className="title">Population: </span>
-                                        <span>{country.population}</span>
+                                        <span>{country.population.toLocaleString()}</span>
                                     </div>
                                     <div className="region">
                                         <span className="title">Region: </span>
