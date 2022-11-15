@@ -1,7 +1,5 @@
 import {Link} from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom'
-import fontawesome from '@fortawesome/fontawesome'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon } from '@fortawesome/free-regular-svg-icons'
 import 'font-awesome/css/font-awesome.min.css';
