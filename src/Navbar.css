@@ -102,8 +102,9 @@
   }
 
   .lightMode {
-    font-size: 1.1em;
+    font-size: 1.5em;
     transition: 0.3s ease-out;
+    outline: 0;
   }
 
   .lightMode:hover {
