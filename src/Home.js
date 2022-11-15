@@ -30,7 +30,7 @@ const Home = ({theme}) => {
                 <input className={`${theme}`} placeholder="Search for a country" onChange={searchCountries}></input>
                 <div className="filterbar">
                     <div className={`title`}>Filter by Region</div>
-                    <select className={`${theme}`} defaultValue={"all"} onChange={selectRegion}>
+                    <select className={`${theme}`} defaultValue={"all"} onChange={selectRegion} title="Filter By Region">
                         <option value="all">All countries</option>
                         <option value="Africa">Africa</option>
                         <option value="Americas">Americas</option>
