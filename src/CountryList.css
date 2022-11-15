@@ -20,11 +20,10 @@
   }
   
   .country {
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     overflow: hidden;
     text-align: start;
-    background-color: white;
     height: 100%;
   }
   
