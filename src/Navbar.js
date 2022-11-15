@@ -21,7 +21,7 @@ const Navbar = ({theme, setTheme}) => {
             <nav className={`navbar ${theme}`}>
                 <div className="links">
                     <Link className={`${theme}`} to="/">Where in the world?</Link>
-                    <FontAwesomeIcon icon={faMoon} className={`lightMode ${theme}`} onClick={toggleTheme} tabindex="0"/>
+                    <FontAwesomeIcon icon={faMoon} className={`lightMode ${theme}`} onClick={toggleTheme}/>
                 </div>
             </nav>
     );
