@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
 import './SearchBar.css';
 import Back from './Back';
 import './App.css';
@@ -15,12 +14,12 @@ function App() {
   const [isLoading, setIsLoading] = React.useState(true);
 
   const handleLoading = () => {
-  setIsLoading(false);
+    setIsLoading(false);
   }
   
-  useEffect(()=>{
-  window.addEventListener("load",handleLoading);
-  return () => window.removeEventListener("load",handleLoading);
+  useEffect(() => {
+    window.addEventListener("load",handleLoading);
+    return () => window.removeEventListener("load",handleLoading);
   },[])
   
   const [theme, setTheme] = useState('light');
@@ -52,8 +51,6 @@ function App() {
     </Router>
     </div>
   ):(<div className={`${theme}`}><div className='loader'></div></div>)
-    
-  
 }
 
 export default App;
