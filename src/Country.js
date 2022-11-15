@@ -10,7 +10,7 @@ const Country = ({theme}) => {
   
     return !isPending ? (
       <div className={`country-details ${theme}`}>
-          {country && <img src={country[0].flags.png}></img> }
+          {country && <img src={country[0].flags.png} title={country[0].name + " flag"}></img> }
           <div className="country-info">
             {country && <div className="country-name title">{country[0].name}</div>}
             <div className="country-facts">
