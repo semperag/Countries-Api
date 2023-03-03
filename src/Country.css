@@ -1,6 +1,6 @@
 .App {
     margin: 0;
-    padding: 7.5%;
+    padding: 2% 7%;
 }
 
 .country-details {
@@ -20,7 +20,7 @@
     .country-info {
         width: 95%;
         max-width: 500px;
-        margin: 5%;
+        margin: 5% 0%;
 
     }
 }
