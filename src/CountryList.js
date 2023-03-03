@@ -14,7 +14,7 @@ function CountryList({countries, name, theme}) {
         <div className={`country-list`}>
             {myData.map((country) => (
                 <div className={`country-preview ${theme}`} key={country.alpha3Code}>
-                    <Link to={`/details/${country.alpha3Code}`}>
+                    <Link to={`/Countries-Api/details/${country.alpha3Code}`}>
                         <div className="country">
                             <img src={country.flags.png}></img>
                             <div className="country-container">

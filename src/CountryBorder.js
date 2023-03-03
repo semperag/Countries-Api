@@ -5,7 +5,7 @@ function CountryBorder({countries, theme}) {
     return (
         <div className={`border-list ${theme}`}>
             {countries && countries.map((country) => (
-                <Link to={`/details/${country}`} key={country}>
+                <Link to={`/Countries-Api/details/${country}`} key={country}>
                     {country}
                 </Link>
             ))}

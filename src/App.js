@@ -33,10 +33,10 @@ function App() {
         <div className="App">
             <div className='content'>
               <Switch>
-                <Route exact path="/">
+                <Route exact path="/Countries-Api/">
                   <Home theme={theme}/>
                 </Route>
-                <Route path="/details/:id">
+                <Route path="/Countries-Api/details/:id">
                   <div className='single-country'>
                     <Back theme={theme}/>
                     <Country theme={theme}/>
