@@ -21,7 +21,6 @@ const Home = ({theme}) => {
 
     const searchCountries = (e) => {
         setSearch(e.target.value);
-        console.log(e.target.value);
     }
 
     return (
