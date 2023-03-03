@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Countries-App/static/css/main.4ec9be95.css",
-    "main.js": "/Countries-App/static/js/main.0c98be99.js",
-    "static/js/787.9c2a7c98.chunk.js": "/Countries-App/static/js/787.9c2a7c98.chunk.js",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Countries-App/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "/Countries-App/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Countries-App/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/Countries-App/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Countries-App/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "index.html": "/Countries-App/index.html",
-    "main.4ec9be95.css.map": "/Countries-App/static/css/main.4ec9be95.css.map",
-    "main.0c98be99.js.map": "/Countries-App/static/js/main.0c98be99.js.map",
-    "787.9c2a7c98.chunk.js.map": "/Countries-App/static/js/787.9c2a7c98.chunk.js.map"
+    "main.css": "/Countries-Api/static/css/main.a0e25783.css",
+    "main.js": "/Countries-Api/static/js/main.0356126f.js",
+    "static/js/787.9c2a7c98.chunk.js": "/Countries-Api/static/js/787.9c2a7c98.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Countries-Api/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/Countries-Api/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Countries-Api/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/Countries-Api/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Countries-Api/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/Countries-Api/index.html",
+    "main.a0e25783.css.map": "/Countries-Api/static/css/main.a0e25783.css.map",
+    "main.0356126f.js.map": "/Countries-Api/static/js/main.0356126f.js.map",
+    "787.9c2a7c98.chunk.js.map": "/Countries-Api/static/js/787.9c2a7c98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec9be95.css",
-    "static/js/main.0c98be99.js"
+    "static/css/main.a0e25783.css",
+    "static/js/main.0356126f.js"
   ]
 }
